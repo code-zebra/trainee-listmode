@@ -1,7 +1,7 @@
 package com.boss.cart;
 
 import com.boss.cart.entity.Goods;
-import com.boss.cart.service.GoodsService;
+import com.boss.cart.service.impl.GoodsService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

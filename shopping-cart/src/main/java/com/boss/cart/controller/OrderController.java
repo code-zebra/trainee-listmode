@@ -1,11 +1,18 @@
 package com.boss.cart.controller;
 
 import com.boss.cart.entity.Order;
-import com.boss.cart.service.OrderService;
+import com.boss.cart.entity.OrderItem;
+import com.boss.cart.service.impl.OrderService;
+import com.boss.cart.service.impl.ShoppingCartService;
+import com.boss.cart.util.IdWorker;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -18,10 +25,12 @@ import java.util.UUID;
 public class OrderController {
 
     private OrderService orderService;
+    private ShoppingCartService cartService;
 
     @Autowired
-    public OrderController(OrderService orderService) {
+    public OrderController(OrderService orderService, ShoppingCartService cartService) {
         this.orderService = orderService;
+        this.cartService = cartService;
     }
 
     /**
@@ -39,17 +48,32 @@ public class OrderController {
      * 添加订单信息到购物车中
      * @return
      */
-    @PutMapping("/{order_id}")
-    public String add(@PathVariable long order_id) {
+    @PutMapping("/{orderId}")
+    public String add(@PathVariable long orderId) {
         Order order = new Order();
-        order.setId(order_id);
-        // UUID生成随机订单号
+        order.setId(orderId);
+        /*// UUID生成随机订单号
         Long snUUID = UUID.randomUUID().getMostSignificantBits();
-        order.setSn(snUUID);
-        order.setUid(987654321L);
+        order.setSn(snUUID);*/
+        // 雪花算法生成随机订单号
+        long sn = new IdWorker(1, 1, 1).nextId();
+        order.setSn(sn);
+        order.setUid(cartService.getOwnerId());
         orderService.addOrder(order);
         return "Order Added" + new Date().toString();
     }
 
+    /**
+     * 根据账单id查询商品信息
+     * @param orderId
+     * @param model
+     * @return
+     */
+    @GetMapping("/selectItems/{orderId}")
+    public String selectItemsByOrderId(@PathVariable long orderId, Model model) throws JsonProcessingException {
+        List<OrderItem> items = orderService.getItemByOrderId(orderId);
+        model.addAttribute("items", items);
+        return new ObjectMapper().writeValueAsString(items) + "\n" + new Date().toString();
+    }
 
 }

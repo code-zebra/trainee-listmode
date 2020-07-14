@@ -1,4 +1,4 @@
-package com.boss.cart.service;
+package com.boss.cart.service.impl;
 
 import com.boss.cart.entity.Order;
 import com.boss.cart.entity.OrderItem;
@@ -35,6 +35,11 @@ public class OrderService {
         this.session = session;
         this.orderMapper = orderMapper;
         this.cartService = cartService;
+    }
+
+    public List<OrderItem> getItemByOrderId(long orderId) {
+        List<OrderItem> orderItems = orderMapper.selectItemListByOrderId(orderId);
+        return orderItems;
     }
 
     /**

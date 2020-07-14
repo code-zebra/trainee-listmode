@@ -1,9 +1,7 @@
 package com.boss.cart.controller;
 
-import com.boss.cart.entity.Goods;
 import com.boss.cart.entity.OrderItem;
-import com.boss.cart.mapper.GoodsMapper;
-import com.boss.cart.service.ShoppingCartService;
+import com.boss.cart.service.impl.ShoppingCartService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +20,10 @@ import java.util.List;
 @RequestMapping("/cart")
 public class CartController {
     private ShoppingCartService cartService;
-    private GoodsMapper goodsMapper;
 
     @Autowired
-    public CartController(ShoppingCartService cartService, GoodsMapper goodsMapper) {
-
+    public CartController(ShoppingCartService cartService) {
         this.cartService = cartService;
-        this.goodsMapper = goodsMapper;
     }
 
     /**
@@ -78,7 +73,7 @@ public class CartController {
      * @return
      */
     @GetMapping("/saveCartToDB")
-    public String saveCart() {
+    public String saveCartToDB() {
         cartService.saveCart();
         return "Cart Saved! " + new Date().toString();
     }
@@ -89,7 +84,7 @@ public class CartController {
      * @return
      */
     @DeleteMapping("/deleteCartInDB/{goodsId}")
-    public String deleteCart(@PathVariable long goodsId) {
+    public String deleteCartInDB(@PathVariable long goodsId) {
         cartService.delete(goodsId);
         return "Cart Deleted! " + new Date().toString();
     }
@@ -100,7 +95,7 @@ public class CartController {
      * @return
      */
     @PostMapping("/getCartFromDB")
-    public String getCartFromDate(Model model) throws JsonProcessingException {
+    public String getCartFromDB(Model model) throws JsonProcessingException {
         List<OrderItem> cartFromDB = cartService.getCartFromDB();
         String cartJson = "";
         cartJson = new ObjectMapper().writeValueAsString(cartFromDB);

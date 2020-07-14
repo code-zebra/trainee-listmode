@@ -1,8 +1,7 @@
 package com.boss.cart.controller;
 
 import com.boss.cart.entity.Goods;
-import com.boss.cart.mapper.GoodsMapper;
-import com.boss.cart.service.GoodsService;
+import com.boss.cart.service.impl.GoodsService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,11 +59,16 @@ public class GoodsController {
         if (goods.getName() != null) {editedGoods.setName(goods.getName());}
         if (goods.getNumber() != 0) {editedGoods.setNumber(goods.getNumber());}
         if (goods.getPrice() != 0) {editedGoods.setPrice(goods.getPrice());}
-
-        boolean edit = goodsService.edit(editedGoods);
+        goodsService.edit(editedGoods);
         return "Goods Edited! " + new Date().toString();
     }
 
+    /**
+     * 获取数据库中商品列表
+     * @param model
+     * @return
+     * @throws JsonProcessingException
+     */
     @GetMapping("/selectAllFromDB")
     public String selectAll(Model model) throws JsonProcessingException {
         List<Goods> goodsList = goodsService.selectAll();
@@ -81,7 +85,7 @@ public class GoodsController {
      * @throws JsonProcessingException
      */
     @GetMapping("/{goodsId}")
-    public String selectByIdFromGoods(Model model, @PathVariable long goodsId) throws JsonProcessingException {
+    public String selectByIdFromGoodsInDB(Model model, @PathVariable long goodsId) throws JsonProcessingException {
         Goods goods = goodsService.getGoodsByGoodsId(goodsId);
         String goodsJson = new ObjectMapper().writeValueAsString(goods);
         model.addAttribute(String.valueOf(goodsId), goodsJson);

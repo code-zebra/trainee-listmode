@@ -1,7 +1,9 @@
-package com.boss.cart.service;
+package com.boss.cart.service.impl;
 
 import com.boss.cart.entity.Goods;
 import com.boss.cart.mapper.GoodsMapper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,8 @@ import java.util.List;
  */
 @Service
 public class GoodsService {
+
+    private static Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
     /**
      * set方式注入GoodsMapper

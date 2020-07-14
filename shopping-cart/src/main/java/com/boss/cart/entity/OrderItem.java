@@ -43,5 +43,6 @@ public class OrderItem implements Serializable {
     /**
      * 该类商品总价
      */
+    @TableField("price")
     private float price;
 }

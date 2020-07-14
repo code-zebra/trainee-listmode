@@ -1,22 +1,16 @@
-package com.boss.cart.service;
+package com.boss.cart.service.impl;
 
 import com.boss.cart.entity.Goods;
-import com.boss.cart.entity.Order;
 import com.boss.cart.entity.OrderItem;
 import com.boss.cart.mapper.GoodsMapper;
 import com.boss.cart.mapper.OrderItemMapper;
 import com.boss.cart.mapper.OrderMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.type.MapType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.net.HttpCookie;
 import java.util.*;
 
 /**
@@ -128,7 +122,7 @@ public class ShoppingCartService {
     }
 
     public Long getOwnerId() {
-        return 123456L;
+        return 12345678L;
     }
 
     /**
@@ -137,6 +131,13 @@ public class ShoppingCartService {
      */
     public List<OrderItem> getCartFromDB() {
         orderItems = (ArrayList<OrderItem>) orderItemMapper.selectList(null);
+        // 将数据库中OrderItem信息保存到session中
+        Map<Long, OrderItem> cartMap = new HashMap<Long, OrderItem>();
+        for (OrderItem orderItem : orderItems) {
+            cartMap.put(orderItem.getGoodsId(), orderItem);
+        }
+        myCart = cartMap;
+        session.setAttribute("cart", myCart);
         return orderItems;
     }
 
