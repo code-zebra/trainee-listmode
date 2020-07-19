@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS goods;
+
+CREATE TABLE goods(
+    id BIGINT PRIMARY KEY,
+    name VARCHAR(4) NOT NULL,
+    number INT NOT NULL,
+    price FLOAT NOT NULL
+);

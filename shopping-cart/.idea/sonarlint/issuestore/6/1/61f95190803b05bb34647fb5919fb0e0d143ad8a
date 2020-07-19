@@ -1,0 +1,13 @@
+
+[
+java:S18547"9Remove this useless assignment to local variable "goods".(¿Æ¹üÿÿÿÿ8Àî¬´.
+Q
+java:S1068"/Remove this unused "orderMapper" private field.(Ë„‡£øÿÿÿÿ8ĞÙÅ¯´.
+V
+java:S3400}"9Remove this method and declare a constant for this value.(ˆòÆÔ8­¡­´.
+L
+java:S14817"*Remove this unused "goods" local variable.(¿Æ¹üÿÿÿÿ8Àî¬´.
+v
+java:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(èØ8‡¤±å³.
+|
+java:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŸµËÛøÿÿÿÿ8ÌŒÎ»´.

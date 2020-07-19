@@ -1,0 +1,1 @@
+Spring Boot 中，Freemarker模板引擎默认的位置

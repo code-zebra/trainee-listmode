@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f956fe93-35aa-43ff-9c25-899a81415c0a" name="Default Changelist" comment="雪花算法（粗糙）生成订单号 + 自定义SQL-根据order ID查询对应商品" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="ftl" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\maven_repository" />
+        <option name="mavenHome" value="F:/Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="F:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eRZGhjb7p0yEPHqi97r24X9vz5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="GrepConsole" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\boss-train\SpringBoot\boss-train\trainee-listmode\shopping-cart\src\main\resources\mapper" />
+      <recent name="H:\boss-train\SpringBoot\boss-train\trainee-listmode\shopping-cart\src\main\resources\com\boss\mapper" />
+      <recent name="H:\boss-train\SpringBoot\boss-train\trainee-listmode\shopping-cart\src\main\resources\com.boss.mapper" />
+      <recent name="H:\boss-train\SpringBoot\boss-train\trainee-listmode\shopping-cart\src\main\resources\sql" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LongTest.longTest">
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.boss.Hello" />
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.boss.cart.util.IdWorker" />
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boss.cart.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Log4j2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.boss.log4j2.Log4j2Test" />
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boss.log4j2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LongTest.longTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.boss" />
+      <option name="MAIN_CLASS_NAME" value="com.boss.LongTest" />
+      <option name="METHOD_NAME" value="longTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartServiceTest.selectItemListByOrderIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boss.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.boss.cart" />
+      <option name="MAIN_CLASS_NAME" value="com.boss.cart.ShoppingCartServiceTest" />
+      <option name="METHOD_NAME" value="selectItemListByOrderIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shopping-cart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.boss.cart.ShoppingCartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LongTest.longTest" />
+        <item itemvalue="JUnit.ShoppingCartServiceTest.selectItemListByOrderIdTest" />
+        <item itemvalue="Application.IdWorker" />
+        <item itemvalue="Application.Log4j2Test" />
+        <item itemvalue="Application.Hello" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f956fe93-35aa-43ff-9c25-899a81415c0a" name="Default Changelist" comment="" />
+      <created>1594286271734</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594286271734</updated>
+      <workItem from="1594286274937" duration="1524000" />
+      <workItem from="1594301384313" duration="3433000" />
+      <workItem from="1594341651041" duration="14030000" />
+      <workItem from="1594449737487" duration="28000" />
+      <workItem from="1594449819680" duration="7951000" />
+      <workItem from="1594469300344" duration="3562000" />
+      <workItem from="1594516121350" duration="4321000" />
+      <workItem from="1594522757117" duration="622000" />
+      <workItem from="1594523388330" duration="55000" />
+      <workItem from="1594523931045" duration="142000" />
+      <workItem from="1594524097631" duration="65000" />
+      <workItem from="1594524216389" duration="6000" />
+      <workItem from="1594524259548" duration="860000" />
+      <workItem from="1594538490409" duration="2744000" />
+      <workItem from="1594553943671" duration="12000" />
+      <workItem from="1594554003766" duration="98000" />
+      <workItem from="1594554251798" duration="230000" />
+      <workItem from="1594554512988" duration="1984000" />
+      <workItem from="1594563080417" duration="1640000" />
+      <workItem from="1594564884056" duration="753000" />
+      <workItem from="1594600201190" duration="14000" />
+      <workItem from="1594600263417" duration="12033000" />
+      <workItem from="1594620541551" duration="605000" />
+      <workItem from="1594621771157" duration="269000" />
+      <workItem from="1594622106168" duration="12012000" />
+      <workItem from="1594686926364" duration="4149000" />
+      <workItem from="1594691135526" duration="11335000" />
+      <workItem from="1594715879011" duration="1751000" />
+      <workItem from="1595137313091" duration="586000" />
+    </task>
+    <task id="LOCAL-00001" summary="基本购物车，缺少下单功能">
+      <created>1594630798567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594630798567</updated>
+    </task>
+    <task id="LOCAL-00002" summary="雪花算法（粗糙）生成订单号 + 自定义SQL-根据order ID查询对应商品">
+      <created>1594713323462</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594713323462</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="基本购物车，缺少下单功能" />
+    <MESSAGE value="雪花算法（粗糙）生成订单号 + 自定义SQL-根据order ID查询对应商品" />
+    <option name="LAST_COMMIT_MESSAGE" value="雪花算法（粗糙）生成订单号 + 自定义SQL-根据order ID查询对应商品" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="434" y="112" key="#Plugins" timestamp="1594554486424">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="434" y="112" key="#Plugins/0.0.1536.834@0.0.1536.834" timestamp="1594554486424" />
+    <state x="179" y="258" key="#SQL_Dialects" timestamp="1594303922992">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="179" y="258" key="#SQL_Dialects/0.0.1536.834@0.0.1536.834" timestamp="1594303922992" />
+    <state x="398" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594519945649">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="398" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1594519945649" />
+    <state x="403" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1594470006655">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="403" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.834@0.0.1536.834" timestamp="1594470006655" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1594469822111">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1594469822111" />
+    <state x="614" y="306" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1594554427934">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="614" y="306" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1594554427934" />
+    <state x="349" y="72" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1594554425481">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="72" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1536.834@0.0.1536.834" timestamp="1594554425481" />
+    <state x="176" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594690121037">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="176" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1594690121037" />
+    <state x="161" y="145" key="FileChooserDialogImpl" timestamp="1594618788227">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="161" y="145" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594618788227" />
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom" timestamp="1594715870743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594715870743" />
+    <state width="1493" height="244" key="GridCell.Tab.0.center" timestamp="1594715870743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="244" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594715870743" />
+    <state width="1493" height="244" key="GridCell.Tab.0.left" timestamp="1594715870743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="244" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594715870743" />
+    <state width="1493" height="244" key="GridCell.Tab.0.right" timestamp="1594715870743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="244" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594715870743" />
+    <state width="1493" height="221" key="GridCell.Tab.1.bottom" timestamp="1594715870741">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="221" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594715870741" />
+    <state width="1493" height="221" key="GridCell.Tab.1.center" timestamp="1594715870741">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="221" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1594715870741" />
+    <state width="1493" height="221" key="GridCell.Tab.1.left" timestamp="1594715870739">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="221" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1594715870739" />
+    <state width="1493" height="221" key="GridCell.Tab.1.right" timestamp="1594715870741">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="221" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1594715870741" />
+    <state x="349" y="151" key="IDE.errors.dialog" timestamp="1594634752122">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="151" key="IDE.errors.dialog/0.0.1536.834@0.0.1536.834" timestamp="1594634752122" />
+    <state x="282" y="144" key="Maven.ArtifactSearchDialog" timestamp="1594715756798">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="282" y="144" key="Maven.ArtifactSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1594715756798" />
+    <state x="437" y="118" key="RollbackChangesDialog" timestamp="1594632332072">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="437" y="118" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1594632332072" />
+    <state x="256" y="0" key="SettingsEditor" timestamp="1594695139228">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="256" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1594695139228" />
+    <state x="345" y="156" key="Vcs.Push.Dialog.v2" timestamp="1594713352931">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="345" y="156" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1594713352931" />
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1594554255055">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1594554255055" />
+    <state x="540" y="236" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594522640997">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="540" y="236" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.834@0.0.1536.834" timestamp="1594522640997" />
+    <state x="178" y="77" key="new project wizard" timestamp="1594618796193">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="178" y="77" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1594618796193" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1594303737339">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1594303737339" />
+    <state x="425" y="71" width="672" height="676" key="search.everywhere.popup" timestamp="1594606078523">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="71" width="672" height="676" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1594606078523" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.boss.cart.mapper.OrderMapper">
+    <!--配置查询所有-->
+    <select id="selectItemListByOrderId" parameterType="long" resultType="com.boss.cart.entity.OrderItem">
+        SELECT o.user_id, o.sn, i.*
+         FROM goods_order AS o, order_item AS i
+         WHERE o.order_id = i.order_id AND o.order_id = #{orderId}
+    </select>
+</mapper>

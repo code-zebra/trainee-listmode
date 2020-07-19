@@ -1,0 +1,9 @@
+
+[
+java:S1854$"9Remove this useless assignment to local variable "added".(Í«ïüúÿÿÿÿ8­¬ß´.
+M
+java:S1481/"+Remove this unused "delete" local variable.(„›´êÿÿÿÿÿ8òôä´.
+\
+java:S1854/":Remove this useless assignment to local variable "delete".(„›´êÿÿÿÿÿ8òôä´.
+L
+java:S1481$"*Remove this unused "added" local variable.(Í«ïüúÿÿÿÿ8Õ¹á´.

@@ -1,0 +1,11 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "cart.orders.pageSize",
+      "type": "java.lang.String",
+      "description": "Set the maximum number of orders to display in a list."
+    }
+  ],
+  "hints": []
+}
