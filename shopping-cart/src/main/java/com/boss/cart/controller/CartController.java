@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.Date;
 import java.util.List;
 
@@ -97,9 +98,12 @@ public class CartController {
     @PostMapping("/getCartFromDB")
     public String getCartFromDB(Model model) throws JsonProcessingException {
         List<OrderItem> cartFromDB = cartService.getCartFromDB();
+
         String cartJson = "";
         cartJson = new ObjectMapper().writeValueAsString(cartFromDB);
         model.addAttribute("cart", cartJson);
         return "Get Cart From MySQL :" + cartJson;
     }
+
+
 }
